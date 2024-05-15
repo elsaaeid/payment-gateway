@@ -1,0 +1,60 @@
+.payment-container {
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-bg);
+}
+.btn {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    border-radius: .4rem;
+    font-size: 13px;
+    padding: 9px;
+    width: max-content;
+  }
+  .btn:hover {
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-white);
+    color: var(--color-white);
+  }
+
+  /* CSS for the CardElement */
+.CardElement {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: var(--color-bg);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    font-family: "Arial", sans-serif;
+    font-size: 28px;
+    color: #333;
+  }
+  /* CSS for the CardBrandIcon-container */
+.CardBrandIcon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px; /* Add margin for spacing */
+  }
+  
+  /* CSS for the CardBrandIcon */
+  .CardBrandIcon {
+    width: 50px; /* Set a specific width for the icon */
+    height: auto; /* Allow the height to adjust proportionally */
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    .CardElement {
+        font-size: 14px;
+      }
+    .CardBrandIcon-container {
+      flex-direction: column; /* Change to a column layout on smaller screens */
+    }
+  
+    .CardBrandIcon {
+      margin-bottom: 10px; /* Add margin between icons in the column layout */
+    }
+  }
